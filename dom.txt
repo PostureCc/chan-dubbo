@@ -1,0 +1,6 @@
+启动流程
+	1.启动zookerper
+	2.启动dubbo-admin.jar(可省略)
+	3.启动user-service
+	4.启动commodity-service
+	5.调用commodity-service中的hello方法 此方法会远程调用user-service工程
