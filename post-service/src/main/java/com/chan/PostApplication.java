@@ -13,15 +13,15 @@ import org.springframework.boot.web.servlet.support.SpringBootServletInitializer
  */
 @Log4j2
 @SpringBootApplication
-public class CommodityApplication extends SpringBootServletInitializer {
+public class PostApplication extends SpringBootServletInitializer {
 
     @Override
     protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
-        return application.sources(CommodityApplication.class);
+        return application.sources(PostApplication.class);
     }
 
     public static void main(String[] args) {
-        SpringApplication.run(CommodityApplication.class, args);
+        SpringApplication.run(PostApplication.class, args);
         log.info("commodity start...");
     }
 

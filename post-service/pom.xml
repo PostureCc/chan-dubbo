@@ -9,18 +9,26 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>service-api</artifactId>
+    <artifactId>post-service</artifactId>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.chan</groupId>
+            <artifactId>service-api</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+    </dependencies>
 
     <build>
         <plugins>
-            <!--            <plugin>-->
-            <!--                <groupId>org.springframework.boot</groupId>-->
-            <!--                <artifactId>spring-boot-maven-plugin</artifactId>-->
-            <!--                <configuration>-->
-            <!--                    <finalName>user-service</finalName>-->
-            <!--                    <mainClass>com.chan.UserApplication</mainClass>-->
-            <!--                </configuration>-->
-            <!--            </plugin>-->
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <finalName>post-service</finalName>
+                    <mainClass>com.chan.PostApplication</mainClass>
+                </configuration>
+            </plugin>
 
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -45,6 +53,5 @@
             </plugin>
         </plugins>
     </build>
-
 
 </project>

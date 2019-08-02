@@ -11,7 +11,7 @@
 
     <modules>
         <module>user-service</module>
-        <module>commodity-service</module>
+        <module>post-service</module>
         <module>service-api</module>
     </modules>
 
@@ -28,6 +28,7 @@
 
         <spring-boot.version>2.0.5.RELEASE</spring-boot.version>
         <dubbo.version>2.7.1</dubbo.version>
+        <tomcat.version>9.0.16</tomcat.version>
     </properties>
 
     <parent>
